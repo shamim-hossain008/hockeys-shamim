@@ -30,76 +30,74 @@
   <body>
     <header>
       <!-- nav bar section -->
-      <nav>
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+      <nav class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <li><a>Home</a></li>
-                <li>
-                  <a>About</a>
-                  <ul class="p-2">
-                    <li><a>About 1</a></li>
-                    <li><a>About 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <a class="btn btn-ghost text-xl"
-              >Hockey<span class="text-orange-600">’</span>s</a
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a class="text-orange-500">Home</a></li>
+              <li><a>Home</a></li>
               <li>
-                <details>
-                  <summary>About</summary>
-                  <ul class="p-2">
-                    <li><a>About 1</a></li>
-                    <li><a>About 2</a></li>
-                  </ul>
-                </details>
+                <a>About</a>
+                <ul class="p-2">
+                  <li><a>About 1</a></li>
+                  <li><a>About 2</a></li>
+                </ul>
               </li>
               <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
-          </div>
+          <a class="btn btn-ghost text-xl"
+            >Hockey<span class="text-orange-600">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-orange-500">Home</a></li>
+            <li>
+              <details>
+                <summary>About</summary>
+                <ul class="p-2">
+                  <li><a>About 1</a></li>
+                  <li><a>About 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Pages</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
         </div>
       </nav>
+    </header>
+    <!-- Hero section -->
+    <main>
       <!-- slider section -->
-      <section>
-        <div class="carousel w-full">
+      <section class="max-w-screen-xl mx-auto">
+        <div class="carousel w-full rounded-2xl">
           <!-- slider 1 -->
           <div id="slide1" class="carousel-item relative w-full">
-            <img
-              src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-              class="w-full"
-            />
+            <img src="/Images/1.png" class="object-cover object-center" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -109,10 +107,7 @@
           </div>
           <!-- slider 2 -->
           <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-              class="w-full"
-            />
+            <img src="/Images/2.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -148,22 +143,22 @@
           </div>
         </div>
       </section>
-    </header>
-    <!-- Hero section -->
-    <main>
-      <div
-        class="w-4/6 py-20 pb-60 lg:p-8 bg-[#F8F8F8] ml-4 lg:ml-60 leading-7 text-center items-center border-opacity-50"
-      >
-        <div class="h-52 card bg-base-300 rounded-box place-items-center">
-          <h2 class="pt-8 text-3xl">Professional Hockeys Club</h2>
-          <p class="text-[#6D6D71] pt-2">
-            Our Professional Hockey Club. Immerse yourself in a world where
-            skill meets strategy, dedication fuels triumph, and teamwork reigns
-            supreme. Join us on a journey of unparalleled sportsmanship, as we
-            strive for victory on and off the ice. Discover the spirit of our
-            Professional Hockey Club, where passion for the game knows no
-            bounds."
-          </p>
+
+      <div class="px-4">
+        <div
+          class="px-10 md:px-0 max-w-screen-xl mx-auto mt-10 bg-base-300 rounded-lg"
+        >
+          <div class="text-center p-4 md:p-10">
+            <h2 class="text-xl md:text-3xl">Professional Hockeys Club</h2>
+            <p class="text-[#6D6D71] pt-2">
+              Our Professional Hockey Club. Immerse yourself in a world where
+              skill meets strategy, dedication fuels triumph, and teamwork
+              reigns supreme. Join us on a journey of unparalleled
+              sportsmanship, as we strive for victory on and off the ice.
+              Discover the spirit of our Professional Hockey Club, where passion
+              for the game knows no bounds."
+            </p>
+          </div>
         </div>
       </div>
       <!-- Radial progress section -->
@@ -172,11 +167,11 @@
         <div class="grid grid-flow-row lg:grid-flow-col p-10 gap-7">
           <div>
             <div
-              class="radial-progress text-error rotate-180"
-              style="--value: 87"
+              class="radial-progress text-error"
+              style="--value: 70"
               role="progressbar"
             >
-              87%
+              70%
             </div>
 
             <h2 class="text-xl pt-5">Prayer Facility</h2>
@@ -233,9 +228,10 @@
           </div>
         </div>
       </section>
+      <!-- ---- -->
       <!-- Program Sections -->
       <section class="m-8">
-        <div class="text-center w-4/6 h-auto pb-5 pl-96">
+        <div class="text-center max-w-2xl mx-auto my-10 md:my-20">
           <h2 class="text-3xl text-black pb-5">Program Sections</h2>
           <p>
             "Explore our diverse Program Sections tailored to meet your unique
@@ -248,13 +244,11 @@
           </p>
         </div>
         <!-- Image Program Sections -->
-        <div class="grid grid-cols-2 gap-3 rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
           <!-- image 1 -->
           <div
-            class="hero min-h-min rounded-lg"
-            style="
-              background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);
-            "
+            class="hero min-h-min rounded-xl overflow-hidden"
+            style="background-image: url(/Images/2.png)"
           >
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-left text-neutral-content">
@@ -271,10 +265,8 @@
           </div>
           <!-- image 2 -->
           <div
-            class="hero min-h-min rounded-3xl"
-            style="
-              background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);
-            "
+            class="hero min-h-min rounded-xl overflow-hidden object-cover object-center"
+            style="background-image: url(/Images/3.png)"
           >
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-left text-neutral-content">
@@ -295,10 +287,8 @@
         </div>
         <!-- image 3 -->
         <div
-          class="hero min-h-min mt-8"
-          style="
-            background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);
-          "
+          class="hero min-h-min mt-8 rounded-xl overflow-hidden object-cover object-center"
+          style="background-image: url(/Images/4.png)"
         >
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-left text-neutral-content">
@@ -317,9 +307,10 @@
           </div>
         </div>
       </section>
+
       <!-- Our New Products  section-->
-      <section>
-        <div class="text-center w-4/6 h-auto pb-5 pl-96">
+      <section class="px-2 md:px-10">
+        <div class="text-center max-w-xl mx-auto my-10 md:my-20">
           <h2 class="text-3xl text-[#131318]">Our New Products</h2>
           <p>
             Exciting News! Introducing Our Latest Hockey Gear Lineup. Unleash
@@ -329,220 +320,230 @@
             New Hockey Products and gear up for success on the ice!"
           </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-36">
-          <!-- fast review -->
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">World Cup Flags Football</h2>
-              <p>
-                The jersey design is unique to each country and often
-                incorporates national colors, patterns, and symbols. It may also
-                feature sponsor logos and the team's badge.
-              </p>
-              <div class="inline-flex gap-5">
-                <h3 class="text-2xl text-orange-400">Price-$22.00</h3>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-                <h4>Delivery Fee : Free</h4>
+        <div class="py-4 md:py-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- fast review -->
+            <div class="card w-5/6 mx-auto md:card-side bg-base-100 shadow-2xl">
+              <figure>
+                <img
+                  src="/Images/5.png"
+                  alt="Jacket"
+                  class="w-full md:w-56 h-56"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <p>5.0</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>20</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p>
+                  "World Cup Flags Football Jacket" or any associated product.
+                </p>
+
+                <div class="flex justify-between items-center">
+                  <p>Price - $22.00</p>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- 2nd review -->
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">World Cup Flags Football</h2>
-              <p>
-                The jersey design is unique to each country and often
-                incorporates national colors, patterns, and symbols. It may also
-                feature sponsor logos and the team's badge.
-              </p>
-              <div class="inline-flex gap-5">
-                <h3 class="text-2xl text-orange-400">Price-$22.00</h3>
+            <!-- review 2 -->
+            <div class="card w-5/6 mx-auto md:card-side bg-base-100 shadow-2xl">
+              <figure>
+                <img
+                  src="/Images/6.png"
+                  alt="Shoes"
+                  class="w-full md:w-56 h-56"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <p>5.0</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>20</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p>As of my last knowledge update in January 2024,</p>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-                <h4>Delivery Fee : Free</h4>
+                <div class="flex justify-between items-center">
+                  <p>Price - $22.00</p>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- review 3 -->
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">World Cup Flags Football</h2>
-              <p>
-                The jersey design is unique to each country and often
-                incorporates national colors, patterns, and symbols. It may also
-                feature sponsor logos and the team's badge.
-              </p>
-              <div class="inline-flex gap-5">
-                <h3 class="text-2xl text-orange-400">Price-$22.00</h3>
+            <!-- review 3 -->
+            <div class="card w-5/6 mx-auto md:card-side bg-base-100 shadow-2xl">
+              <figure>
+                <img
+                  src="/Images/7.png"
+                  alt="Shoes"
+                  class="w-full md:w-56 h-56"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <p>5.0</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>20</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p>As of my last knowledge update in January 2024,</p>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-                <h4>Delivery Fee : Free</h4>
+                <div class="flex justify-between items-center">
+                  <p>Price - $22.00</p>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- review 4 -->
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">World Cup Flags Football</h2>
-              <p>
-                The jersey design is unique to each country and often
-                incorporates national colors, patterns, and symbols. It may also
-                feature sponsor logos and the team's badge.
-              </p>
-              <div class="inline-flex gap-5">
-                <h3 class="text-2xl text-orange-400">Price-$22.00</h3>
+            <!-- review 5 -->
+            <div class="card w-5/6 mx-auto md:card-side bg-base-100 shadow-2xl">
+              <figure>
+                <img
+                  src="/Images/8.png"
+                  alt="Shoes"
+                  class="w-full md:w-56 h-56"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <p>5.0</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>20</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p>As of my last knowledge update in January 2024,</p>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-                <h4>Delivery Fee : Free</h4>
+                <div class="flex justify-between items-center">
+                  <p>Price - $22.00</p>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- review 5 -->
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">World Cup Flags Football</h2>
-              <p>
-                The jersey design is unique to each country and often
-                incorporates national colors, patterns, and symbols. It may also
-                feature sponsor logos and the team's badge.
-              </p>
-              <div class="inline-flex gap-5">
-                <h3 class="text-2xl text-orange-400">Price-$22.00</h3>
+            <!-- review 6 -->
+            <div class="card w-5/6 mx-auto md:card-side bg-base-100 shadow-2xl">
+              <figure>
+                <img
+                  src="/Images/9.png"
+                  alt="Shoes"
+                  class="w-full md:w-56 h-56"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <p>5.0</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>20</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p>As of my last knowledge update in January 2024,</p>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-                <h4>Delivery Fee : Free</h4>
+                <div class="flex justify-between items-center">
+                  <p>Price - $22.00</p>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- review 6 -->
-          <div class="card card-side bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                alt="Movie"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">World Cup Flags Football</h2>
-              <p>
-                The jersey design is unique to each country and often
-                incorporates national colors, patterns, and symbols. It may also
-                feature sponsor logos and the team's badge.
-              </p>
-              <div class="inline-flex gap-5">
-                <h3 class="text-2xl text-orange-400">Price-$22.00</h3>
+            <div class="card w-5/6 mx-auto md:card-side bg-base-100 shadow-2xl">
+              <figure>
+                <img
+                  src="/Images/10.png"
+                  alt="Shoes"
+                  class="w-full md:w-56 h-56"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <p>5.0</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>20</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                </div>
+                <h2 class="card-title">World Cup Flags Football</h2>
+                <p>As of my last knowledge update in January 2024,</p>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                  />
-                </svg>
-                <h4>Delivery Fee : Free</h4>
+                <div class="flex justify-between items-center">
+                  <p>Price - $22.00</p>
+
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -599,6 +600,7 @@
         </nav>
       </div>
     </section>
+
     <!-- footer section -->
     <footer class="footer p-10 bg-neutral text-neutral-content">
       <aside>
@@ -631,7 +633,7 @@
             <p>hockeys@support.com</p>
           </div>
 
-          <div class="flex flex-inline gap-2">
+          <div class="flex flex-none lg:flex-inline lg:gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -652,27 +654,43 @@
         </div>
       </aside>
 
-      <nav>
-        <header class="footer-title text-lg">Company</header>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <header class="footer-title text-lg">Support</header>
-        <a class="link link-hover">Help Center </a>
-        <a class="link link-hover">FAQ</a>
-        <a class="link link-hover">Ticket Support</a>
-        <a class="link link-hover">Contact Us</a>
-      </nav>
-      <nav>
-        <header class="footer-title text-lg">Services</header>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav>
+      <div class="flex justify-between gap-20 md:gap-40">
+        <div class="w-full flex justify-center">
+          <div>
+            <h4 class="text-xl font-bold mb-2">Company</h4>
+            <ul>
+              <li class="link link-hover mb-2">About us</li>
+              <li class="link link-hover mb-2">Leadership</li>
+              <li class="link link-hover mb-2">Careers</li>
+              <li class="link link-hover mb-2">News & Article</li>
+              <li class="link link-hover mb-2">Legal Notice</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full flex justify-center">
+          <div>
+            <h4 class="text-xl font-bold mb-2">Support</h4>
+            <ul>
+              <li class="link link-hover mb-2">Help Center</li>
+              <li class="link link-hover mb-2">FAQ</li>
+              <li class="link link-hover mb-2">Ticket Support</li>
+              <li class="link link-hover mb-2">Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center">
+        <div>
+          <h4 class="text-xl font-bold mb-2">Services</h4>
+          <ul>
+            <li class="link link-hover mb-2">Branding</li>
+            <li class="link link-hover mb-2">Design</li>
+            <li class="link link-hover mb-2">Marketing</li>
+            <li class="link link-hover mb-2">Advertisement</li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
